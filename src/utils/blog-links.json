@@ -1,0 +1,178 @@
+[
+  {
+    "topic": "Getting Started",
+    "href": "/youtube/getting-started/"
+  },
+  {
+    "topic": "Welcome",
+    "href": "/youtube/chai-aur-html/welcome/"
+  },
+  {
+    "topic": "HTML Intro",
+    "href": "/youtube/chai-aur-html/introduction/"
+  },
+  {
+    "topic": "Emmet Crash Course",
+    "href": "/youtube/chai-aur-html/emmit-crash-course/"
+  },
+  {
+    "topic": "Common HTML Tags",
+    "href": "/youtube/chai-aur-html/html-tags/"
+  },
+  {
+    "topic": "Welcome",
+    "href": "/youtube/chai-aur-git/welcome/"
+  },
+  {
+    "topic": "Git and GitHub",
+    "href": "/youtube/chai-aur-git/introduction/"
+  },
+  {
+    "topic": "Terminology",
+    "href": "/youtube/chai-aur-git/terminology/"
+  },
+  {
+    "topic": "Behind the scenes",
+    "href": "/youtube/chai-aur-git/behind-the-scenes/"
+  },
+  {
+    "topic": "Branches in Git",
+    "href": "/youtube/chai-aur-git/branches/"
+  },
+  {
+    "topic": "Diff, Stash, Tags",
+    "href": "/youtube/chai-aur-git/diff-stash-tags/"
+  },
+  {
+    "topic": "Managing History",
+    "href": "/youtube/chai-aur-git/managing-history/"
+  },
+  {
+    "topic": "Collaborate with Github",
+    "href": "/youtube/chai-aur-git/github/"
+  },
+  {
+    "topic": "Welcome",
+    "href": "/youtube/chai-aur-c/welcome/"
+  },
+  {
+    "topic": "C++ Intro",
+    "href": "/youtube/chai-aur-c/introduction/"
+  },
+  {
+    "topic": "First Program in C++",
+    "href": "/youtube/chai-aur-c/hello-world/"
+  },
+  {
+    "topic": "Variables & Constants",
+    "href": "/youtube/chai-aur-c/variables-and-constants/"
+  },
+  {
+    "topic": "Data Types",
+    "href": "/youtube/chai-aur-c/data-types/"
+  },
+  {
+    "topic": "Operators",
+    "href": "/youtube/chai-aur-c/operators/"
+  },
+  {
+    "topic": "Control Flow",
+    "href": "/youtube/chai-aur-c/control-flow/"
+  },
+  {
+    "topic": "Loops",
+    "href": "/youtube/chai-aur-c/loops/"
+  },
+  {
+    "topic": "Functions",
+    "href": "/youtube/chai-aur-c/functions/"
+  },
+  {
+    "topic": "Welcome",
+    "href": "/youtube/chai-aur-django/welcome/"
+  },
+  {
+    "topic": "Django Intro",
+    "href": "/youtube/chai-aur-django/getting-started/"
+  },
+  {
+    "topic": "Jinja Templates App",
+    "href": "/youtube/chai-aur-django/jinja-templates/"
+  },
+  {
+    "topic": "Tailwind Integration",
+    "href": "/youtube/chai-aur-django/tailwind/"
+  },
+  {
+    "topic": "Models",
+    "href": "/youtube/chai-aur-django/models/"
+  },
+  {
+    "topic": "Relationships & Forms",
+    "href": "/youtube/chai-aur-django/relationships-and-forms/"
+  },
+  {
+    "topic": "Welcome",
+    "href": "/youtube/chai-aur-sql/welcome/"
+  },
+  {
+    "topic": "SQL Intro",
+    "href": "/youtube/chai-aur-sql/introduction/"
+  },
+  {
+    "topic": "PostgreSQL",
+    "href": "/youtube/chai-aur-sql/postgres/"
+  },
+  {
+    "topic": "Database Design",
+    "href": "/youtube/chai-aur-sql/normalization/"
+  },
+  {
+    "topic": "Exercise - DB Design",
+    "href": "/youtube/chai-aur-sql/database-design-exercise/"
+  },
+  {
+    "topic": "SQL Joins and Keys",
+    "href": "/youtube/chai-aur-sql/joins-and-keys/"
+  },
+  {
+    "topic": "Exercise - Joins",
+    "href": "/youtube/chai-aur-sql/joins-exercise/"
+  },
+  {
+    "topic": "Welcome",
+    "href": "/youtube/chai-aur-devops/welcome/"
+  },
+  {
+    "topic": "Server Startup",
+    "href": "/youtube/chai-aur-devops/setup-vpc/"
+  },
+  {
+    "topic": "Nginx Configuration",
+    "href": "/youtube/chai-aur-devops/setup-nginx/"
+  },
+  {
+    "topic": "Nginx Rate Limit",
+    "href": "/youtube/chai-aur-devops/nginx-rate-limiting/"
+  },
+  {
+    "topic": "Nginx SSL Setup",
+    "href": "/youtube/chai-aur-devops/nginx-ssl-setup/"
+  },
+  {
+    "topic": "Deploy Node API",
+    "href": "/youtube/chai-aur-devops/node-nginx-vps/"
+  },
+  {
+    "topic": "PostgreSQL & Docker",
+    "href": "/youtube/chai-aur-devops/postgresql-docker/"
+  },
+  {
+    "topic": "PostgreSQL on VPS",
+    "href": "/youtube/chai-aur-devops/postgresql-vps/"
+  },
+  {
+    "topic": "Advance Node Logger",
+    "href": "/youtube/chai-aur-devops/node-logger/"
+  }
+]

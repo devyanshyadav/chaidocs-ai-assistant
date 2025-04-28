@@ -1,0 +1,46 @@
+{
+  "name": "chaidocs ai assistant",
+  "version": "1.0.0",
+  "description": "ChaiDocs AI Assistant is a powerful, AI-driven application designed to scrape, process, and interact with documentation content from the ChaiDocs website, a resource similar to W3Schools. It leverages advanced AI models and vector search to provide precise, natural language answers to coding-related queries, making it an invaluable tool for developers.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts interactive",
+    "dev": "nodemon src/index.ts interactive"
+  },
+  "keywords": [
+    "chaiDocs",
+    "AI",
+    "assistant",
+    "documentation",
+    "scraper",
+    "vector search",
+    "natural language processing",
+    "developer tools"
+  ],
+  "author": "devyansh developer",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^0.10.0",
+    "@langchain/community": "^0.3.41",
+    "@langchain/core": "^0.3.49",
+    "@langchain/google-genai": "^0.2.5",
+    "@langchain/qdrant": "^0.1.2",
+    "@langchain/textsplitters": "^0.1.0",
+    "@qdrant/js-client-rest": "^1.14.0",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^24.7.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "cors": "^2.8.5",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
