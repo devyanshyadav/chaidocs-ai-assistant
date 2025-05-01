@@ -42,14 +42,7 @@ const createLoader = (url: string) => {
         }
     });
 };
-function getSeriesName(url:string) {
-    const parts = url.replace(/^\/+|\/+$/g, '').split('/');
-    if (parts.length >= 2) {
-      return parts[1]; // Returns 'chai-aur-html'
-    } else {
-      return ""; // Returns null if the URL doesn't have enough segments
-    }
-  }
+
 export const readLinksFromFile = async (): Promise<LinkData[]> => {
     try {
         if (!fs.existsSync(LINKS_FILE_PATH)) {
