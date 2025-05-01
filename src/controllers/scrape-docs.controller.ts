@@ -4,13 +4,15 @@ import { Request, Response } from 'express';
 import { PuppeteerWebBaseLoader } from "@langchain/community/document_loaders/web/puppeteer";
 import { GoogleGenerativeAIEmbeddings } from '@langchain/google-genai';
 import fs from 'fs';
+import TurndownService from 'turndown'; // Import Turndown
 import { DOC_BASE_URL, LINKS_FILE_PATH } from '../utils/constant';
 import formatHref from '../utils/format-href';
 
 export type LinkData = {
     topic: string,
     href: string
-}
+};
+
 const embedder = new GoogleGenerativeAIEmbeddings({
     model: "text-embedding-004",
     apiKey: process.env.GEMINI_API_KEY,
@@ -20,7 +22,6 @@ const textSplitter = new RecursiveCharacterTextSplitter({
     chunkSize: 1000,
     chunkOverlap: 200
 });
-
 
 const createLoader = (url: string) => {
     return new PuppeteerWebBaseLoader(url, {
@@ -35,9 +36,13 @@ const createLoader = (url: string) => {
             return await page.evaluate(() => {
                 const articleContent = document.querySelector('main');
                 if (articleContent) {
-                    return articleContent.innerHTML;
+                    return articleContent.innerHTML; // Return HTML content
                 }
                 return '';
+            }).then((htmlContent) => {
+                // Convert HTML to Markdown
+                const turndownService = new TurndownService();
+                return turndownService.turndown(htmlContent);
             });
         }
     });
@@ -57,7 +62,6 @@ export const readLinksFromFile = async (): Promise<LinkData[]> => {
         return [];
     }
 };
-
 
 const scrapeDocs = async (req: Request, res: Response) => {
     try {

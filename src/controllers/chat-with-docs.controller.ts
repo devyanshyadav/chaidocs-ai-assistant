@@ -50,9 +50,10 @@ const chatWithDocs = async (req: Request, res: Response) => {
             const searchResults = await vectorStore.similaritySearch(hydeResponse);
             context += searchResults.map((doc) => doc.pageContent).join('\n\n') + '\n\n';
         }
+        console.log(context)
 
         const finalResponse = await ai.models.generateContent({
-            model: "gemini-2.0-flash",
+            model: "gemini-1.5-flash",
             contents: query,
             config: {
                 systemInstruction: systemPrompt02(NodeHtmlMarkdown.translate(context)),
