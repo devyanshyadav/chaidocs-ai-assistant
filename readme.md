@@ -1,10 +1,25 @@
-# ChaiDocs AI Assistant
+# ChaiDocs AI Backend for ChatGenie
 
-ChaiDocs AI Assistant is a powerful, AI-driven application designed to scrape, process, and interact with documentation content from the ChaiDocs website, a resource similar to W3Schools. It leverages advanced AI models and vector search to provide precise, natural language answers to coding-related queries, making it an invaluable tool for developers.
+![ChaiDocs Banner](/public/banner.png)  
+*ChaiDocs AI powers ChatGenie, your go-to Chrome extension for instant access to programming docs and blogs from ChaiDocs website.*
 
-## Features
+ChaiDocs AI is the backend server for **ChatGenie**, a powerful Chrome extension that enables developers to instantly access programming documentation, blogs, and tutorials from the ChaiDocs website (a resource similar to W3Schools). Built with Node.js, it leverages advanced AI models, vector search, and web scraping to deliver precise, natural language answers to coding-related queries, making it an essential tool for developers.
 
-- **Automated Link and blog content Scraping**: Extracts documentation links and content from the ChaiDocs website.
+**ChatGenie** integrates seamlessly with your browser, allowing you to interact with ChaiDocs resources via a popup or context menu. Learn more about ChatGenie on the [Chrome Web Store](https://chromewebstore.google.com/detail/chaigenie-chat-powered-pr/leegenpbbglelignaoipjcaglbekpfpj).
+
+## About ChatGenie
+
+Chat with **ChaiGenie** to instantly access programming docs, blogs, and tutorials from ChaiDocs, right in your browser. Unlock a seamless learning experience with ChaiGenie, powered by Hitesh Choudhary’s *Chai aur Code* resources:
+
+✨ **Key Features**:
+- **Instant Access to Resources**: Retrieve programming docs and blogs from a pre-scraped vector database.
+- **Intelligent Search**: Search across multiple languages like Python, JavaScript, and more with fast, relevant results.
+- **Browser Integration**: Use via popup or context menu for quick access while browsing.
+- **Personalized Learning**: Get related topic suggestions to enhance your coding journey.
+
+## Features of ChaiDocs AI Backend
+
+- **Automated Content Scraping**: Extracts documentation links and blog content from the ChaiDocs website.
 - **Documentation Vectorization**: Processes and vectorizes content for efficient similarity-based search.
 - **AI-Powered Chat**: Enables natural language interaction with documentation, delivering concise and accurate answers.
 - **Vector Storage with Qdrant**: Stores vectorized documents for fast, relevance-based retrieval.
@@ -22,6 +37,8 @@ ChaiDocs AI Assistant is a powerful, AI-driven application designed to scrape, p
 - **`src/utils/constant.ts`**: Defines constants like base URLs and file paths.
 - **`src/utils/format-href.ts`**: Formats URLs for consistency and readability.
 - **`src/utils/blog-links.json`**: Stores scraped documentation links.
+- **`src/utils/prompts`**: Include System Prompts.
+
 
 ## Prerequisites
 
@@ -36,7 +53,7 @@ ChaiDocs AI Assistant is a powerful, AI-driven application designed to scrape, p
 1. **Clone the Repository**:
    ```bash
    git clone <repository-url>
-   cd genai-project06
+   cd chaidocs
    ```
 
 2. **Install Dependencies**:
@@ -51,6 +68,7 @@ ChaiDocs AI Assistant is a powerful, AI-driven application designed to scrape, p
    GEMINI_API_KEY=<your-google-genai-api-key>
    QDRANT_CLIENT=<your-qdrant-client-url>
    QDRANT_API_KEY=<your-qdrant-api-key>
+   SECRET_KEY=<your-secret-key>
    ```
 
 4. **Build the Project**:
@@ -65,7 +83,7 @@ ChaiDocs AI Assistant is a powerful, AI-driven application designed to scrape, p
 
 ## API Endpoints
 
-The application exposes the following endpoints:
+The backend exposes the following endpoints to power ChatGenie:
 
 - **GET /**: Returns a welcome message.
   ```bash

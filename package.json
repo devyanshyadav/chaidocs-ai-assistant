@@ -1,7 +1,7 @@
 {
-  "name": "chaidocs ai assistant",
+  "name": "ChaiDocs AI Backend for ChatGenie",
   "version": "1.0.0",
-  "description": "ChaiDocs AI Assistant is a powerful, AI-driven application designed to scrape, process, and interact with documentation content from the ChaiDocs website, a resource similar to W3Schools. It leverages advanced AI models and vector search to provide precise, natural language answers to coding-related queries, making it an invaluable tool for developers.",
+  "description": "ChaiDocs AI powers ChatGenie, your go-to Chrome extension for instant access to programming docs and blogs from ChaiDocs website.",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
